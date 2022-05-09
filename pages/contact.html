@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!--Style-->
-    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/custom_animations.css">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    
     
 
     <link rel="icon" type="image/x-icon" href="../assets/fav-icon/favicon.ico">
@@ -62,6 +64,7 @@
                 <ul>
                     <li><a href="./about.html">ABOUT US</a></li>
                     <li><a href="./contact.html">CONTACT</a></li>
+
                     <li><a href="#">VISIT JAMAICA</a></li>
                     
                     <li><a href=""><i class="fa-brands fa-facebook-f"></i> Facebook</a></li>
@@ -90,29 +93,32 @@
 
         <div class="Contact">
 
-            <span class="contactPageTitle">Give in touch with us</span>
+             <h1 class="contactPageTitle fade-in slide-down">Give in touch with us</h1> 
         
-            <span class="contactDetail"><a href="tel:123-456-7890"><i class="fa-solid fa-phone"></i> 123-456-7890</a></span>
+            <span class="contactDetail slide-left"><a href="tel:123-456-7890"><i class="fa-solid fa-phone"></i> 123-456-7890</a></span>
         
-            <span class="contactDetail"> <a href="mailto:someone@example.com"><i class="fa-solid fa-envelope"></i> someone@example.com</a></span>
+            <span class="contactDetail slide-left"> <a href="mailto:someone@example.com"><i class="fa-solid fa-envelope"></i> someone@example.com</a></span>
         
-            <span class="contactDetail"> <a href="https://goo.gl/maps/mocaUeDY6zoBkyG16" target="_blank" rel="noreferrer"><i class="fa-solid fa-location-dot"></i> 5445 Gulf Blvd, St Pete Beach, FL 33706</a></span>
+            <span class="contactDetail slide-left"> <a href="https://goo.gl/maps/mocaUeDY6zoBkyG16" target="_blank" rel="noreferrer"><i class="fa-solid fa-location-dot"></i> 5445 Gulf Blvd, St Pete Beach, FL 33706</a></span>
             
         
-            <span class="contactFormTitle">Send us a message</span>
-            <form class="ContactForm">
+            <span class="contactFormTitle slide-up">Send us a message</span>
+
+
+            <form class="ContactForm slide-up">
         
                 <div class="ContactFormGroup">
         
                     <input class="Input"  type="text" placeholder="Name"  required/>
                     <input class="Input" type="email" placeholder="Email" required/>
-                    <input class="Input" type="text" placeholder="Phone" />
+                    <input class="Input" type="tel" placeholder="Phone" />
         
                     <textarea class="TextArea" type="text " rows = "10" ="message" placeholder="What can we do for you? " required></textarea>
  
                     <button class="ContactSubmitButton">Submit</button>
         
                 </div>
+
             </form>
            
         </div>

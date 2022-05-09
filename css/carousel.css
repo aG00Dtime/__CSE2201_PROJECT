@@ -1,13 +1,63 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans:wght@200;400&family=Lora&family=Playfair+Display:ital,wght@0,500;0,700;1,400;1,500;1,600;1,900&family=Varela&display=swap');
+
+
+:root{
+
+    /*Colors*/
+    --charcoal:#353A47;
+    --brick-red:#D44D5C;
+    --baby-powder:#F0F4EF;
+    --onyx:#32373B;
+    --spacecadet:#17255A;
+    --cadet:#4F6D7A;
+    --blackcoal:#3D5467;
+    /*Fonts*/
+    --Abel: 'Abel', sans-serif;
+    --Josephine: 'Josefin Sans', sans-serif;
+    --Lora:'Lora', serif;
+    --Playfair: 'Playfair Display', serif;
+    --Varela:'Varela', sans-serif;
+}
+
 .carousel {
-    height: 80%;
-    width: 95%;
+    
+    height: 120vh;
+    width: 98%;
+    
     position: relative;
     display: block;
     margin: 50px auto;
-    border: 1px solid black;
+
+
+}
+
+.carousel-title h3{
+    font-family: var(--Playfair);
+    color: var(--spacecadet);
+    margin-top: 50px;
+    font-size: 30px;
+   
+    display:flex;
+    justify-content: center;
+    
+}
+
+.fade-style{
+
+    -webkit-transform: translateY(50px) rotate(-5deg) translateZ(0);
+    transform: translateY(200px) ;
+    -webkit-transition-delay: .3s;
+    -o-transition-delay: .3s;
+    transition-delay: .3s;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+    opacity: 0;
 }
 
 .carousel-item{
+    border-radius: 5px;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -73,3 +123,11 @@
     z-index: 3;
     opacity: 1;
   } 
+
+.inView {
+    opacity: 1;
+    -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
+    transform: translateY(0px) rotate(0deg) translateZ(0);
+}
+
+
