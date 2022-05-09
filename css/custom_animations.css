@@ -63,10 +63,10 @@
 
 /*UP AND DOWN SLIDE*/
 .slide-up{
-    animation: 2s slidein-up;
+    animation: 1.5s slidein-up;
 }
 .slide-down{
-    animation: 2s slidein-down;
+    animation: 1.5s slidein-down;
 }
 
 @keyframes slidein-down {
