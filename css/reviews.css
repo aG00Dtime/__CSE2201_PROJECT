@@ -1,0 +1,138 @@
+body{
+    background-color: rgb(230, 230, 230);
+    background-size: cover;
+}
+:root{
+
+    /*Colors*/
+    --charcoal:#353A47;
+    --brick-red:#D44D5C;
+    --baby-powder:#F0F4EF;
+    --onyx:#32373B;
+    --spacecadet:#17255A;
+    --cadet:#4F6D7A;
+    --blackcoal:#3D5467;
+    /*Fonts*/
+    --Abel: 'Abel', sans-serif;
+    --Josephine: 'Josefin Sans', sans-serif;
+    --Lora:'Lora', serif;
+    --Playfair: 'Playfair Display', serif;
+    --Varela:'Varela', sans-serif;
+}
+
+
+.review-page{
+    margin-top: 100px;
+    width: 100%;
+    height: 110vh;
+    margin-bottom: 100px;
+}
+
+.add-review{
+
+    font-size: 20px;
+    padding: 4px 6px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #3D5467;
+    color: #F0F4EF;
+}
+
+.add-review:hover{
+    background-color: var(--spacecadet);
+    color: var(--baby-powder);
+
+}
+.button{
+    
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.review-page-title{
+    display: flex;
+    justify-content: center;
+     font-size: 30px;
+     color: var(--spacecadet);
+     font-family: var(--Playfair);
+}
+
+.rating-title{
+    font-family: var(--Abel);
+    text-align: center;
+    padding: 10px;
+}
+.review-form{
+    
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 300;
+}
+
+.username{
+    margin-top: 10px;
+    width: 250px;
+    padding: 10px;
+    font-family: var(--Abel);
+    font-size: 18px;
+}
+
+.start-rating{
+    padding: 10px;
+}
+
+.added-reviews{
+    margin: 50px;
+   
+    border-radius: 5px;
+
+    display: block;
+    
+
+}
+
+#rating i{
+    color: rgb(255, 174, 0);
+}
+
+#username{
+    text-transform: capitalize;
+}
+
+#rating,#username{
+    font-family: var(--Lora);
+    color: #17255A;
+    
+}
+
+.new{
+
+    margin:  50px;
+    background-color: #0099ff28;
+    padding: 20px;
+    border-radius: 5px;
+}
+.text-area{
+    resize: none;
+    font-family: var(--Abel);
+    font-size: 20px;
+    padding: 2px;
+}
+#review-text{
+    padding: 10px;
+    font-family: var(--Lora);
+    font-size: 20px;
+    
+}
+
+hr{
+    border: 0.2px solid rgba(255, 255, 255, 0.527);
+    
+}
