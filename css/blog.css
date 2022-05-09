@@ -19,10 +19,9 @@
     --Varela:'Varela', sans-serif;
 }
 
-/* body {
-    background-color: #f3f3f3;
-} */
-
+body{
+    background-color: rgb(230, 230, 230);
+}
 .blogTitle{
     margin-top: 100px;
     padding: 20px;
