@@ -1,21 +1,32 @@
 var rate = 0;
-var stars;
+var stars = "";
 
+
+// temp add review to page for demo
 function submitRate() {
+
     var user = document.getElementById('name').value;
     var review = document.getElementById('reviewtext').value;
+
     if (user != "" && review != "") {
+
         if (rate == 5) {
-            stars = '<i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>';
+            for (i = 0; i < 5; i++) {
+                stars += '<i class="fa-solid fa-star"></i>'
+            }
 
         }
 
         else if (rate == 4) {
-            stars = '<i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>';
+            for (i = 0; i < 4; i++) {
+                stars += '<i class="fa-solid fa-star"></i>'
+            }
 
         }
         else if (rate == 3) {
-            stars = '<i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>';
+            for (i = 0; i < 3; i++) {
+                stars += '<i class="fa-solid fa-star"></i>'
+            }
 
         }
         else if (rate == 2) {
@@ -47,11 +58,16 @@ function submitRate() {
         document.getElementById('old_reviews').innerHTML += html;
         document.getElementById('name').value = "";
         document.getElementById('reviewtext').value = "";
+        stars = "";
 
         closeForm();
+
+
     }
 }
 
+
+// start rating
 function startRating(item) {
     rate = item.id[0];
     sessionStorage.star = rate;
@@ -64,10 +80,9 @@ function startRating(item) {
         }
     }
 }
-var rate = 0;
-var stars;
 
 
+// validate review form
 function validate() {
     var user = document.getElementById('name').value;
     var review = document.getElementById('reviewtext').value;
@@ -82,6 +97,7 @@ function validate() {
 
 }
 
+// hide stuff when the review button is clicked
 function openForm() {
 
     document.getElementById("leave-review").style.display = "none";

@@ -5,6 +5,7 @@
 :root{
 
     /*Colors*/
+    --turqoise:#59F8E8;
     --charcoal:#353A47;
     --brick-red:#D44D5C;
     --baby-powder:#F0F4EF;
@@ -12,6 +13,7 @@
     --spacecadet:#17255A;
     --cadet:#4F6D7A;
     --blackcoal:#3D5467;
+    --forest-green:#004F2D;
     /*Fonts*/
     --Abel: 'Abel', sans-serif;
     --Josephine: 'Josefin Sans', sans-serif;
@@ -49,7 +51,7 @@ header{
 header .brand a{
     font-weight: bold;
     font-size: 25px;
-    color: var(--charcoal);
+    color: var(--forest-green);
     font-family: var(--Josephine);
     
 }
@@ -75,7 +77,7 @@ header .navbar ul li a{
 
 header .navbar ul li a:hover{
     color: var(--baby-powder);
-    background-color: var(--charcoal);
+    background-color: var(--blackcoal);
     transition: all 0.3s ease-in-out;
 }
 
@@ -116,9 +118,6 @@ header label{
 
 /* end of Nav Bar*/
 
-
-
-
 /* Landing Page SECTION 1*/
 main .landing-page{
     height: 110vh;
@@ -140,7 +139,7 @@ main .landing-page-titles{
 main .landing-page .landing-page-small{
     position: absolute;
     top: 30%;
-    font-size: 20px;
+    font-size: 25px;
 
 }
 main .landing-page .landing-page-large{

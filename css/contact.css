@@ -9,7 +9,7 @@
     height: 100%;
     padding-top: 100px;
     height: 150vh;
-    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(../assets/backgrounds/contact.jpg);
+    background-image: url(../assets/backgrounds/contact.jpg);
     background-size: cover;
 }
 
@@ -22,9 +22,12 @@
 
 
 .ContactFormGroup{
+    background-color: #ffffff52;
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
 }
 
 
@@ -73,7 +76,9 @@
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.616);
     padding-bottom: 20px;
 }
-
+.message-us{
+    margin-top: 30px;
+}
 
 .contactDetail{
     padding-top: 30px;

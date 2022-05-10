@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans:wght@200;400&family=Lora&family=Playfair+Display:ital,wght@0,500;0,700;1,400;1,500;1,600;1,900&family=Varela&display=swap');
 
 
+
 :root{
 
     /*Colors*/
@@ -20,8 +21,9 @@
 }
 
 body{
-    background-color: rgb(230, 230, 230);
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 }
+
 .blogTitle{
     margin-top: 100px;
     padding: 20px;
@@ -53,18 +55,21 @@ body{
 
 }
 .post{
-    
-   
-    margin:30px 40px 40px 40px;
+
+    margin:40px 40px 40px 40px;
+    background-color: #ffffff7a;
+    border-radius: 5px;
+    padding: 30px;
     
 }
 
 .postTitle{
-    margin-top: 40px;
+    
     color: var(--spacecadet);
     font-family: var(--Playfair);
-    font-size: 30px;
-    margin-bottom: 10px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: bold;
     
 }
 
@@ -112,7 +117,7 @@ body{
 
 .readMore{
     padding-top: 10px;
-    font-size: 30px;
+    font-size: 20px;
     font-family: var(--Abel);
     color: var(--spacecadet);
     cursor: pointer;
