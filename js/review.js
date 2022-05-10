@@ -36,7 +36,7 @@ function submitRate() {
             "<div class ='new slide-up'>" +
             "<br><br>" +
             "<h3 id = 'username'>" + user + "</h3>" +
-            "<h3 id = 'rating'>" + stars + "</h3>" +
+            "<h3 id = 'rating' class='rating'>" + stars + "</h3>" +
             "<br><hr>" +
 
             "<p id='review-text'>" + review + "</p>" +
@@ -47,6 +47,8 @@ function submitRate() {
         document.getElementById('old_reviews').innerHTML += html;
         document.getElementById('name').value = "";
         document.getElementById('reviewtext').value = "";
+
+        closeForm();
     }
 }
 
@@ -62,7 +64,23 @@ function startRating(item) {
         }
     }
 }
+var rate = 0;
+var stars;
 
+
+function validate() {
+    var user = document.getElementById('name').value;
+    var review = document.getElementById('reviewtext').value;
+    if (user == "" || review == "") {
+        alert("Please ensure all fields are filled in.")
+        return;
+    }
+
+    submitRate();
+
+
+
+}
 
 function openForm() {
 

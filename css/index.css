@@ -199,7 +199,9 @@ main .gallery-page{
     margin: 20vh;
     
 }
-
+.about{
+    margin-right: 20px;
+}
 /*Mobile*/
 @media (max-width:1030px) {
     header{
@@ -253,6 +255,14 @@ main .gallery-page{
         
         font-size: 35px;
         text-align: center;
+    }
+
+    
+}
+
+@media (max-width:1400px){
+    .hide{
+        display: none;
     }
     
 }

@@ -70,6 +70,11 @@
                 <li><a href=""><i class="fa-brands fa-instagram-square"></i> Instagram</a></li>
                 </ul>
             </li>
+
+            <li class="hide"><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li class="hide"><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+            <li class="hide"><a href=""><i class="fa-brands fa-instagram-square"></i></a></li>
+            <li class="hide"><a href="tel:123-456-7890"><i class="fa-solid fa-phone"></i> 123-456</a></li>
             
         </ul>
 
@@ -91,11 +96,14 @@
 
             <div class="review-page-title fade-in"><h3>Reviews</h3></div>
             
+            
+            
             <div class="button">
                 <button class="add-review" onclick="openForm()" id="leave-review">Leave a review</button></div>
 
 
             <div class="review-form slide-up" id="review">
+                <div class="close"><i class="fa-solid fa-circle-xmark " onclick="closeForm()"></i></div>
 
                 <input type="text" class="username" id="name" placeholder="Name" required>
 
@@ -103,16 +111,17 @@
 
                     <h3 class="rating-title">Rating</h3>
 
-                    <span id="1"  class="fa fa-star" onmouseover="startRating(this)" startRating="starmark(this)"></span>
-                    <span id="2"  class="fa fa-star" onmouseover="startRating(this)" startRating="starmark(this)"></span>
-                    <span id="3"  class="fa fa-star" onmouseover="startRating(this)" startRating="starmark(this)"></span>
-                    <span id="4"  class="fa fa-star" onmouseover="startRating(this)" startRating="starmark(this)"></span>
-                    <span id="5"  class="fa fa-star" onmouseover="startRating(this)" startRating="starmark(this)"></span>
+                    <span id="1"  class="fa fa-star" onclick="startRating(this)" startRating="starmark(this)"></span>
+                    <span id="2"  class="fa fa-star" onclick="startRating(this)" startRating="starmark(this)"></span>
+                    <span id="3"  class="fa fa-star" onclick="startRating(this)" startRating="starmark(this)"></span>
+                    <span id="4"  class="fa fa-star" onclick="startRating(this)" startRating="starmark(this)"></span>
+                    <span id="5"  class="fa fa-star" onclick="startRating(this)" startRating="starmark(this)"></span>
                 </div>
 
-                <textarea  class="text-area" id="reviewtext" cols="30" rows="10" placeholder="Leave a review"></textarea>
+                <textarea  class="text-area" id="reviewtext" cols="30" rows="10" placeholder="Leave a review" required></textarea>
 
-                <div class="button"><button class="add-review" onclick="closeForm() ,submitRate() ">Submit Review</button></div>
+                <div class="button"><button class="add-review" onclick="validate()">Submit Review</button></div>
+
             </div>
 
             <div class="added-reviews" id ="old_reviews">
