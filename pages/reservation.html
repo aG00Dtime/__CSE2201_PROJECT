@@ -98,24 +98,24 @@
 
             <span class="reservationTitle fade-in"> Set aside a date </span>
     
-            <form class="reservationForm slide-down">
+            <form class="reservationForm slide-down" id="reservationForm">
     
                 <div class="reservationFormGroup">
     
-                    <input class="Input"  type="text" placeholder="Name" autoFocus={true}  required/>
-                    <input class="Input" type="email" placeholder="Email" required/>
-                    <input class="Input" type="text" placeholder="Phone" />
+                    <input class="Input"  type="text" placeholder="Name"  id = "name"required/>
+                    <input class="Input" type="email" placeholder="Email" id="email" required/>
+                    <input class="Input" type="tel" placeholder="Phone" id="phone" required/>
     
     
                     <label class="DateLabel">From</label>
-                    <input class="Date" type="date" />
+                    <input class="Date" type="date" id = "from" required/>
     
     
                     <label class="DateLabel">To</label>
-                    <input class="Date" type="date" />
+                    <input class="Date" type="date" id = "to"  required/>
     
     
-                    <button class="reservationSubmitButton">Check Availability</button>
+                    <button class="reservationSubmitButton" id="reservationSubmitButton"onclick="validateRform()">Check Availability</button>
     
                 </div>
             </form>
@@ -129,5 +129,6 @@
 
     </main>
     <script src="../js/index.js"></script>
+    <script src="../js/reservations.js"></script>
 </body>
 </html>
