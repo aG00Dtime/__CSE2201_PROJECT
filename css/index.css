@@ -1,267 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans:wght@200;400&family=Lora&family=Playfair+Display:ital,wght@0,500;0,700;1,400;1,500;1,600;1,900&family=Varela&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans:wght@200;400&family=Lora&family=Playfair+Display:ital,wght@0,500;0,700;1,400;1,500;1,600;1,900&family=Varela&display=swap');
-
-
-:root{
-
-    /*Colors*/
-    --turqoise:#59F8E8;
-    --charcoal:#353A47;
-    --brick-red:#D44D5C;
-    --baby-powder:#F0F4EF;
-    --onyx:#32373B;
-    --spacecadet:#17255A;
-    --cadet:#4F6D7A;
-    --blackcoal:#3D5467;
-    --forest-green:#004F2D;
-    /*Fonts*/
-    --Abel: 'Abel', sans-serif;
-    --Josephine: 'Josefin Sans', sans-serif;
-    --Lora:'Lora', serif;
-    --Playfair: 'Playfair Display', serif;
-    --Varela:'Varela', sans-serif;
+:root {
+	/*Colors*/
+	--turqoise: #59f8e8;
+	--charcoal: #353a47;
+	--brick-red: #d44d5c;
+	--baby-powder: #f0f4ef;
+	--onyx: #32373b;
+	--spacecadet: #17255a;
+	--cadet: #4f6d7a;
+	--blackcoal: #3d5467;
+	--forest-green: #004f2d;
+	/*Fonts*/
+	--Abel: "Abel", sans-serif;
+	--Josephine: "Josefin Sans", sans-serif;
+	--Lora: "Lora", serif;
+	--Playfair: "Playfair Display", serif;
+	--Varela: "Varela", sans-serif;
 }
 
-*{
-    margin: 0%;
-    padding: 0%;
-    
-    text-transform: capitalize;
-    text-decoration: none;
+* {
+	margin: 0%;
+	padding: 0%;
+
+	text-transform: capitalize;
+	text-decoration: none;
+	-webkit-font-smoothing: antialiased;
 }
-
-
 
 /*Nav Bar*/
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color:var(--baby-powder);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    padding: 0px 6%;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    z-index: 999;
-   
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: var(--baby-powder);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	padding: 0px 6%;
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	z-index: 999;
 }
 
-header .brand a{
-    font-weight: bold;
-    font-size: 25px;
-    color: var(--forest-green);
-    font-family: var(--Josephine);
-    
+header .brand a {
+	font-weight: bold;
+	font-size: 25px;
+	color: var(--forest-green);
+	font-family: var(--Josephine);
 }
 
-header .navbar ul{
-    
-    list-style-type: none;
+header .navbar ul {
+	list-style-type: none;
 }
 
-
-header .navbar ul li{
-    position: relative;
-    float: left;
+header .navbar ul li {
+	position: relative;
+	float: left;
 }
 
-header .navbar ul li a{
-    font-family: var(--Abel);
-    font-size: 20px;
-    padding: 20px;
-    color: var(--charcoal);
-    display: block;
+header .navbar ul li a {
+	font-family: var(--Abel);
+	font-size: 20px;
+	padding: 20px;
+	color: var(--charcoal);
+	display: block;
 }
 
-header .navbar ul li a:hover{
-    color: var(--baby-powder);
-    background-color: var(--blackcoal);
-    transition: all 0.3s ease-in-out;
+header .navbar ul li a:hover {
+	color: var(--baby-powder);
+	background-color: var(--blackcoal);
+	transition: all 0.3s ease-in-out;
 }
 
-header .navbar ul li ul{
-    position: absolute;
-    left: 0;
-    width: 200px;
-    background: var(--baby-powder);
-    display: none;
+header .navbar ul li ul {
+	position: absolute;
+	left: 0;
+	width: 200px;
+	background: var(--baby-powder);
+	display: none;
 }
 
-header .navbar ul li ul li{
-    width: 100%;
-    border-top: 1px solid rgba(0, 0, 0, .1);
+header .navbar ul li ul li {
+	width: 100%;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-header .navbar ul li ul li ul{
-    left:200px;
-    top:0px;
+header .navbar ul li ul li ul {
+	left: 200px;
+	top: 0px;
 }
 
-header .navbar ul li:hover > ul{
-    
-    display: initial;
+header .navbar ul li:hover > ul {
+	display: initial;
 }
 
-#menu-bar{
-    display: none;
+#menu-bar {
+	display: none;
 }
 
 /*Burger Icon*/
-header label{
-    font-size: 30px;
-    color:var(--blackcoal);
-    cursor: pointer;
-    display: none;
+header label {
+	font-size: 30px;
+	color: var(--blackcoal);
+	cursor: pointer;
+	display: none;
 }
 
 /* end of Nav Bar*/
 
 /* Landing Page SECTION 1*/
-main .landing-page{
-    height: 110vh;
-    font-family: var(--Playfair);
-    background:url(../assets/backgrounds/island.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    
+main .landing-page {
+	height: 110vh;
+	font-family: var(--Playfair);
+	background: url(../assets/backgrounds/island.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
-main .landing-page-titles{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: var(--baby-powder);
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.616);
+main .landing-page-titles {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: var(--baby-powder);
+	text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.616);
 }
 
-main .landing-page .landing-page-small{
-    position: absolute;
-    top: 30%;
-    font-size: 25px;
-
+main .landing-page .landing-page-small {
+	position: absolute;
+	top: 30%;
+	font-size: 25px;
 }
-main .landing-page .landing-page-large{
-    position: absolute;
-    top: 35%;
-    font-size: 60px;
-}
-
-
-main .landing-page-button{
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-
+main .landing-page .landing-page-large {
+	position: absolute;
+	top: 35%;
+	font-size: 60px;
 }
 
-main .landing-page-button .vistor-click{
-    font-family: var(--Abel);
-    position: absolute;
-    top: 55%;
-    cursor: pointer;
-    background-color: #17255A;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 25px;
-    
-    
-}
-main .landing-page-button .vistor-click a{
-    
-    cursor: pointer;
-    color: #ffffff;
-
+main .landing-page-button {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
+main .landing-page-button .vistor-click {
+	font-family: var(--Abel);
+	position: absolute;
+	top: 55%;
+	cursor: pointer;
+	background-color: #17255a;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 25px;
+}
+main .landing-page-button .vistor-click a {
+	cursor: pointer;
+	color: #ffffff;
+}
 
-main .landing-page-button .vistor-click:hover{
-    background-color: #4a68d4;
-    transition: all .2s ease-in-out;
+main .landing-page-button .vistor-click:hover {
+	background-color: #4a68d4;
+	transition: all 0.2s ease-in-out;
 }
 
 /* Landing Page SECTION 2*/
 
-main .carousel-page{
-    height: 110vh;
-    
+main .carousel-page {
+	height: 110vh;
 }
-
 
 /* Gallery Page SECTION 1*/
 
-main .gallery-page{
-    margin: 20vh;
-    
+main .gallery-page {
+	margin: 20vh;
 }
-.about{
-    margin-right: 20px;
+.about {
+	margin-right: 20px;
 }
 /*Mobile*/
-@media (max-width:1030px) {
-    header{
-        padding: 20px;
-    }
+@media (max-width: 1030px) {
+	header {
+		padding: 20px;
+	}
 
-    header label{
-        display: initial;
-    }
+	header label {
+		display: initial;
+	}
 
-    header .navbar{
-        position:absolute;
-        top:100%;
-        left: 0;
-        right: 0;
-        background: var(--baby-powder);
-        border-top: 1px solid rgba(0, 0, 0, .1);
-        display: none;
+	header .navbar {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background: var(--baby-powder);
+		border-top: 1px solid rgba(0, 0, 0, 0.1);
+		display: none;
+	}
+	header .navbar ul li {
+		width: 100%;
+	}
 
-    }
-    header .navbar ul li{
-        width: 100%;
-    }
+	header .navbar ul li ul {
+		position: relative;
+		width: 100%;
+	}
 
-    header .navbar ul li ul {
-        position: relative;
-        width: 100%;
-    }
+	header .navbar ul li ul li {
+		background-color: rgb(223, 223, 223);
+	}
+	header .navbar ul li ul li ul {
+		width: 100%;
+		left: 0;
+	}
 
-    header .navbar ul li ul li{
-        background-color:rgb(223, 223, 223);
+	#menu-bar:checked ~ .navbar {
+		display: initial;
+	}
 
-    }
-    header .navbar ul li ul li ul{
-        width: 100%;
-        left:0;
-    }
-
-    #menu-bar:checked ~.navbar{
-        display: initial;
-        
-    }
-
-    main .landing-page .landing-page-small{
-        
-        font-size: 18px;
-        text-align: center;
-    
-    }
-    main .landing-page .landing-page-large{
-        
-        font-size: 35px;
-        text-align: center;
-    }
-
-    
+	main .landing-page .landing-page-small {
+		font-size: 18px;
+		text-align: center;
+	}
+	main .landing-page .landing-page-large {
+		font-size: 35px;
+		text-align: center;
+	}
 }
 
-@media (max-width:1400px){
-    .hide{
-        display: none;
-    }
-    
+@media (max-width: 1400px) {
+	.hide {
+		display: none;
+	}
 }
