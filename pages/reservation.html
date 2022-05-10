@@ -10,11 +10,13 @@
 
     <!--Style-->
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/reservation.css">
+    <link rel="stylesheet" href="../css/custom_animations.css">
     
 
     <link rel="icon" type="image/x-icon" href="../assets/fav-icon/favicon.ico">
 
-    <title>Reservations</title>
+    <title>reservations</title>
 
 </head>
 
@@ -89,6 +91,37 @@
 
 
     <main>
+
+        <section class="reservation-page">
+            
+            <div class="reservation">
+
+            <span class="reservationTitle fade-in"> Set aside a date </span>
+    
+            <form class="reservationForm slide-down">
+    
+                <div class="reservationFormGroup">
+    
+                    <input class="Input"  type="text" placeholder="Name" autoFocus={true}  required/>
+                    <input class="Input" type="email" placeholder="Email" required/>
+                    <input class="Input" type="text" placeholder="Phone" />
+    
+    
+                    <label class="DateLabel">From</label>
+                    <input class="Date" type="date" />
+    
+    
+                    <label class="DateLabel">To</label>
+                    <input class="Date" type="date" />
+    
+    
+                    <button class="reservationSubmitButton">Check Availability</button>
+    
+                </div>
+            </form>
+        </div>
+    
+    </section>
 
         
        
