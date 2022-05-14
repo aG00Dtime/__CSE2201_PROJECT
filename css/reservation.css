@@ -1,12 +1,15 @@
 :root {
 	--oxford-blue: #0a122a;
 }
+
+body {
+	height: 110vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+		url(../assets/backgrounds/boats-beach.jpg) no-repeat;
+	background-size: cover;
+}
 .reservation-page {
 	padding-top: 100px;
-	height: calc(100vh - 50px);
-	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-		url(../assets/backgrounds/boats-beach.jpg);
-	background-size: cover;
 }
 
 .reservationForm {
@@ -17,6 +20,9 @@
 }
 
 .reservationFormGroup {
+	border-radius: 5px;
+	background-color: #ffffff2f;
+	padding: 20px;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -43,6 +49,7 @@
 	width: 99%;
 	font-size: 20px;
 }
+
 .Date {
 	font-family: "Abel", sans-serif;
 	padding: 10px;

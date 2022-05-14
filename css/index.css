@@ -23,8 +23,9 @@
 	margin: 0%;
 	padding: 0%;
 
-	text-transform: capitalize;
+	/* text-transform: capitalize; */
 	text-decoration: none;
+
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -36,7 +37,8 @@ header {
 	right: 0;
 	background-color: var(--baby-powder);
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-	padding: 0px 6%;
+	padding: 0px 20px;
+
 	align-items: center;
 	display: flex;
 	justify-content: space-between;
@@ -47,7 +49,8 @@ header .brand a {
 	font-weight: bold;
 	font-size: 25px;
 	color: var(--forest-green);
-	font-family: var(--Josephine);
+	font-family: var(--Playfair);
+	font-style: italic;
 }
 
 header .navbar ul {
@@ -83,7 +86,7 @@ header .navbar ul li ul {
 
 header .navbar ul li ul li {
 	width: 100%;
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-top: 1px solid rgba(80, 80, 80, 0.192);
 }
 
 header .navbar ul li ul li ul {
@@ -112,6 +115,7 @@ header label {
 /* Landing Page SECTION 1*/
 main .landing-page {
 	height: 110vh;
+	width: 100%;
 	font-family: var(--Playfair);
 	background: url(../assets/backgrounds/island.jpg) no-repeat;
 	background-size: cover;
@@ -173,13 +177,15 @@ main .carousel-page {
 /* Gallery Page SECTION 1*/
 
 main .gallery-page {
-	margin: 20vh;
+	margin: 20px;
 }
+
 .about {
 	margin-right: 20px;
 }
+
 /*Mobile*/
-@media (max-width: 1030px) {
+@media (max-width: 1100px) {
 	header {
 		padding: 20px;
 	}
@@ -228,8 +234,12 @@ main .gallery-page {
 	}
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1500px) {
 	.hide {
 		display: none;
 	}
+}
+
+.landing-page-section-3 {
+	height: 100vh;
 }

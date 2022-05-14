@@ -1,133 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans:wght@200;400&family=Lora&family=Playfair+Display:ital,wght@0,500;0,700;1,400;1,500;1,600;1,900&family=Varela&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans:wght@200;400&family=Lora&family=Playfair+Display:ital,wght@0,500;0,700;1,400;1,500;1,600;1,900&family=Varela&display=swap');
-
-
-:root{
-
-    /*Colors*/
-    --charcoal:#353A47;
-    --brick-red:#D44D5C;
-    --baby-powder:#F0F4EF;
-    --onyx:#32373B;
-    --spacecadet:#17255A;
-    --cadet:#4F6D7A;
-    --blackcoal:#3D5467;
-    /*Fonts*/
-    --Abel: 'Abel', sans-serif;
-    --Josephine: 'Josefin Sans', sans-serif;
-    --Lora:'Lora', serif;
-    --Playfair: 'Playfair Display', serif;
-    --Varela:'Varela', sans-serif;
+:root {
+	/*Colors*/
+	--charcoal: #353a47;
+	--brick-red: #d44d5c;
+	--baby-powder: #f0f4ef;
+	--onyx: #32373b;
+	--spacecadet: #17255a;
+	--cadet: #4f6d7a;
+	--blackcoal: #3d5467;
+	/*Fonts*/
+	--Abel: "Abel", sans-serif;
+	--Josephine: "Josefin Sans", sans-serif;
+	--Lora: "Lora", serif;
+	--Playfair: "Playfair Display", serif;
+	--Varela: "Varela", sans-serif;
 }
 
 .carousel {
-    
-    height: 100vh;
-    width: 99%;
-    
-    position: relative;
-    display: block;
-    margin: 10px auto;
+	height: 80%;
+	width: 80%;
 
-
+	position: relative;
+	display: block;
+	margin: 10px auto;
 }
 
-.carousel-title h3{
-    font-family: var(--Playfair);
-    color: var(--spacecadet);
-    margin-top: 50px;
-    font-size: 30px;
-   
-    display:flex;
-    justify-content: center;
-    
+.carousel-title h3 {
+	font-family: var(--Playfair);
+	color: var(--spacecadet);
+	margin-top: 50px;
+	font-size: 30px;
+	padding: 20px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.fade-style{
-
-    -webkit-transform: translateY(50px) rotate(-5deg) translateZ(0);
-    transform: translateY(200px) ;
-    -webkit-transition-delay: .3s;
-    -o-transition-delay: .3s;
-    transition-delay: .3s;
-    -webkit-transition: .4s;
-    -o-transition: .4s;
-    transition: .4s;
-    opacity: 0;
+.carousel-item {
+	border-radius: 5px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 25px 50px;
+	opacity: 0;
+	transition: all 0.5s ease-in-out;
 }
 
-.carousel-item{
-    border-radius: 5px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 25px 50px;
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
+.arrow {
+	border: solid rgb(255, 255, 255);
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 12px;
 }
 
-.arrow{
-    border:solid rgb(255, 255, 255);
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 12px;
-    
+.arrow-prev {
+	left: 30px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) rotate(135deg);
 }
 
-.arrow-prev{
-    left:30px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%)rotate(135deg);
-}
-
-.arrow-next{
-    right:30px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%)rotate(-45deg);
+.arrow-next {
+	right: 30px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) rotate(-45deg);
 }
 
 [id^="item"] {
-    display: none;
+	display: none;
 }
 
-.item-1{
-    z-index: 2;
-    opacity: 1;
-    background:url(../assets/carousel-backgrounds/img1.jpg);
-    background-size: cover;
+.item-1 {
+	z-index: 2;
+	opacity: 1;
+	background: url(../assets/carousel-backgrounds/img1.jpg);
+	background-size: cover;
 }
-.item-2{
-    
-    background:url(../assets/carousel-backgrounds/img2.jpg);
-    background-size: cover;
-}
-
-.item-3{
-    
-    background:url(../assets/carousel-backgrounds/img3.jpg);
-    background-size: cover;
+.item-2 {
+	background: url(../assets/carousel-backgrounds/img2.jpg);
+	background-size: cover;
 }
 
-*:target ~ .item-1{
-    opacity: 0;
-  }
-  #item-1:target ~ .item-1 {
-    opacity: 1;
-  
-  }
-  #item-2:target ~ .item-2, #item-3:target ~ .item-3 {
-    z-index: 3;
-    opacity: 1;
-  } 
-
-.inView {
-    opacity: 1;
-    -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
-    transform: translateY(0px) rotate(0deg) translateZ(0);
+.item-3 {
+	background: url(../assets/carousel-backgrounds/img3.jpg);
+	background-size: cover;
 }
 
-
+*:target ~ .item-1 {
+	opacity: 0;
+}
+#item-1:target ~ .item-1 {
+	opacity: 1;
+}
+#item-2:target ~ .item-2,
+#item-3:target ~ .item-3 {
+	z-index: 3;
+	opacity: 1;
+}
