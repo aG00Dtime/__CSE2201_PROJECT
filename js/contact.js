@@ -11,7 +11,7 @@ function validateCform() {
 
 
 
-    if (name == "" || email == "" || message == "") {
+    if (name == "" || email == "") {
         alert("Please ensure the form is filled out correctly.");
         return;
     }
