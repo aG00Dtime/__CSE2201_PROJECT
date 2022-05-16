@@ -123,15 +123,15 @@
 
               <h2>Send us a message</h2>
 
-              <form class="contact">
+              <form class="contact" id="contactform">
 
-                <input type="text" name="name" class="text-box" placeholder="Name" required>
+                <input type="text" id="name" class="text-box" placeholder="Name" required>
 
-                <input type="email" name="email" class="text-box" placeholder="Email" required>
+                <input type="email" id="email" class="text-box" placeholder="Email" required>
 
-                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <textarea id="message" rows="5" placeholder="Type your message here..." required></textarea>
 
-                <input type="submit" name="submit" class="send-btn" value="Send"> 
+                <button  class="send-btn" onclick="validateCform()">Submit</button>
 
               </form>
             </div>
@@ -149,5 +149,6 @@
 
 
     <script src="../js/index.js"></script>
+    <script src="../js/contact.js"></script>
 </body>
 </html>

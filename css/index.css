@@ -872,6 +872,7 @@ hr {
 }
 .blogTitle h3 {
 	font-size: 40px;
+	color: var(--spacecadet);
 }
 
 .posts-container {
