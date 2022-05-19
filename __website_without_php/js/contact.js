@@ -1,19 +1,17 @@
-
 // check for errors in the form and alert the user
-function validateRform() {
+function validateCform() {
 
-    var form = document.getElementById("reservationForm");
+    var form = document.getElementById("contactform");
     function handleForm(event) { event.preventDefault(); }
     form.addEventListener('submit', handleForm);
 
     // get the values from the form to be validated
     var name = document.getElementById('name').value;
     var email = document.getElementById('email').value;
-    var phone = document.getElementById('phone').value;
-    var from = document.getElementById('from').value;
-    var to = document.getElementById('to').value;
 
-    if (name == " " || email == " " || phone == "" || from == " " || to == " ") {
+
+
+    if (name == "" || email == "") {
         alert("Please ensure the form is filled out correctly.");
         return;
     }
@@ -23,12 +21,14 @@ function validateRform() {
         return;
     }
 
-    if (isNaN(phone)) {
-        alert("Ensure the phone number is valid.")
+    if (document.getElementById('message').value == "") {
+        alert("Please enter a message.")
         return;
+
     }
 
-    //demo
+
+    //demo - since we can't use libs such as smtp.js to send the email or phpmailer
     // show alert when there are no errors detected and forces a reload on the page
     alert("We will contact you soon!")
     location.reload();
