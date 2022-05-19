@@ -4,22 +4,37 @@ include("{$_SERVER['DOCUMENT_ROOT']}/php/connection.php");
 
 function addR()
 {
+
+    // messy validation
+    if ($_POST["name"] == NULL) {
+        $postName = "Anonymous";
+    } else {
+        $postName = $_POST["name"];
+    }
+
+    if (($_POST["userRating"]) == NULL) {
+        $postRating = 0;
+    } else {
+        $postRating = $_POST["userRating"];
+    }
+
+    if ($_POST["reviewtext"] == NULL) {
+        exit;
+    } else {
+        $postComment = $_POST["reviewtext"];
+    }
+
     $conn = dbconn();
 
-    $postName = ($_POST["name"]);
-    $postRating = ($_POST["userRating"]);
-    $postComment = ($_POST["reviewtext"]);
+    $sql = $conn->prepare("INSERT INTO reviews (name, rating, comment) VALUES (?,?,?)");
+    $sql->bind_param("sss", $postName, $postRating, $postComment);
 
 
+    if ($sql->execute()) {
 
-    $sql = "INSERT INTO reviews (name, rating, comment) VALUES ('$postName', '$postRating', '$postComment')
-    ";
-
-
-    if ($conn->query($sql) == true) {
         header('Location: ' . $_SERVER["HTTP_REFERER"]);
     } else {
-        echo "failed";
+        echo "SOMETHING WENT WRONG";
     }
 
 

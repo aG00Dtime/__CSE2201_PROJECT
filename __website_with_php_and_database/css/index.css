@@ -533,7 +533,7 @@ main .gallery-title {
 }
 .services-page {
 	margin-top: 100px;
-	background: linear-gradient(120deg, #005b7293 0%, #00eaff84 100%),
+	background: linear-gradient(120deg, #00aeda93 0%, #00eaff84 100%),
 		url(../assets/backgrounds/beach2.jpg) no-repeat;
 	background-size: cover;
 }
@@ -541,8 +541,8 @@ main .gallery-title {
 /* review page */
 .review-page-background {
 	/* background-color: #000000; */
-	background: linear-gradient(120deg, #00b6e4 0%, #0095ffc0 100%),
-		url(../assets/backgrounds/beach2.jpg) no-repeat;
+	background: linear-gradient(180deg, #00a7c5d2 0%, #ffffffa4 100%),
+		url(../assets/backgrounds/review.jpg) no-repeat;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: right top;
