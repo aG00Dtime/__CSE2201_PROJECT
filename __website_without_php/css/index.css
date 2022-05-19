@@ -533,42 +533,46 @@ main .gallery-title {
 }
 .services-page {
 	margin-top: 100px;
-	background: linear-gradient(120deg, #005b7293 0%, #01ada56e 100%),
+	background: linear-gradient(120deg, #00aeda93 0%, #00eaff84 100%),
 		url(../assets/backgrounds/beach2.jpg) no-repeat;
 	background-size: cover;
 }
 
 /* review page */
 .review-page-background {
-	background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+	/* background-color: #000000; */
+	background: linear-gradient(180deg, #00a7c5d2 0%, #ffffffa4 100%),
+		url(../assets/backgrounds/review.jpg) no-repeat;
 	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-attachment: fixed;
 }
 
 .review-page {
 	overflow-wrap: break-word;
 	margin-top: 100px;
 	width: 100%;
-	height: 110vh;
 	margin-bottom: 100px;
 }
 
 .add-review {
-	font-size: 20px;
-	padding: 4px 6px;
+	font-size: 25px;
+	padding: 6px 6px;
 	border: none;
 	outline: none;
 	border-radius: 5px;
 	cursor: pointer;
-	background-color: #3d5467;
+	background-color: var(--spacecadet);
 	color: #f0f4ef;
 }
 
 .add-review:hover {
-	background-color: var(--spacecadet);
+	background-color: #004172;
 	color: var(--baby-powder);
 }
 .button {
-	padding-top: 40px;
+	padding-top: 20px;
 	display: flex;
 	justify-content: center;
 }
@@ -577,7 +581,7 @@ main .gallery-title {
 	display: flex;
 	justify-content: center;
 	font-size: 30px;
-	color: var(--spacecadet);
+	color: var(--baby-powder);
 	font-family: var(--Playfair);
 }
 
@@ -585,6 +589,7 @@ main .gallery-title {
 	font-family: var(--Abel);
 	text-align: center;
 	padding: 10px;
+	color: var(--baby-powder);
 }
 .review-form {
 	width: 100%;
@@ -596,11 +601,13 @@ main .gallery-title {
 }
 
 .username {
-	margin-top: 5px;
-	width: 250px;
-	padding-top: 5px;
+	margin-top: 20px;
+	width: 500px;
+	padding: 5px;
 	font-family: var(--Abel);
 	font-size: 18px;
+	border-radius: 5px;
+	border: none;
 }
 
 .start-rating {
@@ -610,14 +617,13 @@ main .gallery-title {
 
 .added-reviews {
 	margin: 10px;
-
 	border-radius: 5px;
-
 	display: block;
 }
 
 #rating i {
-	color: rgb(255, 123, 0);
+	color: rgb(255, 225, 0);
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.196);
 }
 
 #username {
@@ -631,10 +637,10 @@ main .gallery-title {
 }
 
 .new {
-	width: 80%;
+	width: 70%;
 	margin: 20px auto;
-	background-color: #ffffff7a;
-	padding: 20px;
+	background-color: #ffffffac;
+	padding: 30px;
 	border-radius: 5px;
 }
 .text-area {
@@ -642,29 +648,31 @@ main .gallery-title {
 	width: 500px;
 	font-family: var(--Abel);
 	font-size: 20px;
-	padding: 2px;
+	padding: 5px;
+	border-radius: 5px;
+	border: none;
 }
 #review-text {
 	padding: 10px;
 	font-family: var(--Lora);
-	font-size: 15px;
+	font-size: 20px;
 }
 
 hr {
-	border: 0.2px solid rgba(255, 255, 255, 0.527);
+	border: 0.2px solid rgba(149, 149, 149, 0.314);
 }
 
 .close {
-	margin-top: 580px;
-	position: absolute;
-	color: var(--brick-red);
-	font-size: 40px;
+	padding: 20px;
+	color: var(--baby-powder);
+	font-size: 60px;
 	cursor: pointer;
 	z-index: 20;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.196);
 }
 
 .close:hover {
-	color: #a30000;
+	color: #004172;
 }
 
 /*contact*/
@@ -1404,6 +1412,9 @@ hr {
 @media (max-width: 900px) {
 	.new {
 		width: 90%;
+	}
+	.username {
+		width: 80%;
 	}
 	.text-area {
 		width: 80%;
