@@ -4,30 +4,34 @@ include("{$_SERVER['DOCUMENT_ROOT']}/php/connection.php");
 
 function addR()
 {
+    $name = "";
+    $rating = "";
+    $comment = "";
 
-    // messy validation
-    if ($_POST["name"] == NULL) {
-        $postName = "Anonymous";
+    //  validation
+    if (isset(($_POST["name"]))) {
+        $name = $_POST["name"];
     } else {
-        $postName = $_POST["name"];
+        $name = "Anonymous";
     }
 
-    if (($_POST["userRating"]) == NULL) {
-        $postRating = 0;
+    if (isset(($_POST["userRating"]))) {
+        $rating = $_POST["userRating"];
     } else {
-        $postRating = $_POST["userRating"];
+        $rating = 0;
     }
 
-    if ($_POST["reviewtext"] == NULL) {
+    if (isset($_POST["reviewtext"])) {
+        $comment = $_POST["reviewtext"];
+    } else {
+        header('Location: ' . $_SERVER["HTTP_REFERER"]);
         exit;
-    } else {
-        $postComment = $_POST["reviewtext"];
     }
 
     $conn = dbconn();
 
     $sql = $conn->prepare("INSERT INTO reviews (name, rating, comment) VALUES (?,?,?)");
-    $sql->bind_param("sss", $postName, $postRating, $postComment);
+    $sql->bind_param("sss", $name, $rating, $comment);
 
 
     if ($sql->execute()) {

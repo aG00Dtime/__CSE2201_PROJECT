@@ -1,7 +1,3 @@
-<?php 
-
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -9,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<!--fontawesome for icons , theres no way this can be a problem-->
+		<!--fontawesome for icons , theres no way this can be a problem in any version of reality-->
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -20,6 +16,7 @@
 
 		<!--Style-->
 		<link rel="stylesheet" href="../css/index.css" />
+		<!-- <link rel="stylesheet" href="../css/about.css" /> -->
 		<link rel="stylesheet" href="../css/custom_animations.css" />
 
 		<link
@@ -28,7 +25,7 @@
 			href="../assets/fav-icon/favicon.ico"
 		/>
 
-		<title>Reservations</title>
+		<title>Visit Jamaica</title>
 	</head>
 
 	<!--Navigation Menu-->
@@ -54,7 +51,7 @@
 					</ul>
 				</li>
 
-				<li><a href="./reviews.php">REVIEWS</a></li>
+				<li><a href="./reviews.html">REVIEWS</a></li>
 
 				<li>
 					<a href="#">BLOG <i class="fa fa-caret-down"></i></a>
@@ -104,58 +101,17 @@
 	</header>
 
 	<!--Content-->
-	<body class="reservation-page-background">
+	<body class="jamaica-page">
 		<main>
-			<section class="reservation-page">
-				<div class="reservation">
-					<span class="reservationTitle slide-down">
-						<h3>Set aside a date</h3>
-					</span>
-
-					<form class="reservationForm slide-up" id="reservationForm">
-						<div class="reservationFormGroup">
-							<input
-								class="Input"
-								type="text"
-								placeholder="Name (required)"
-								id="name"
-								required
-							/>
-							<input
-								class="Input"
-								type="email"
-								placeholder="Email (required)"
-								id="email"
-								required
-							/>
-							<input
-								class="Input"
-								type="tel"
-								placeholder="Phone (required)"
-								id="phone"
-								required
-							/>
-
-							<label class="DateLabel">From</label>
-							<input class="Date" type="date" id="from" required />
-
-							<label class="DateLabel">To</label>
-							<input class="Date" type="date" id="to" required />
-
-							<!--just validating the form for now since we actually send it somewhere-->
-							<button
-								class="reservationSubmitButton"
-								id="reservationSubmitButton"
-								onclick="validateRform()"
-							>
-								Send Request
-							</button>
-						</div>
-					</form>
+			<section class="jamaica-section">
+				<div class="jamaica-content">
+					<h1 class="slide-down">Visit Jamaica</h1>
+					<p class="slide-left">
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+					</p>
+					<button class="jamaica-button slide-up">LEARN MORE</button>
 				</div>
 			</section>
 		</main>
-		<script src="../js/index.js"></script>
-		<script src="../js/reservations.js"></script>
 	</body>
 </html>

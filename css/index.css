@@ -272,10 +272,12 @@ main .gallery-page {
 
 .gallery-page-body {
 	padding-top: 60px;
-	height: auto;
-	background: linear-gradient(-20deg, #00a123d2 0%, #00abb1b0 100%),
-		url(../assets/backgrounds/beach2.jpg) no-repeat center center fixed;
+	background: linear-gradient(to top, #fff1eb80 0%, #ace1f994 100%),
+		url(../assets/backgrounds/blue-waves.jpg) no-repeat;
 	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-attachment: fixed;
 }
 
 #index-gallery {
@@ -296,7 +298,7 @@ main .gallery-title {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: var(--baby-powder);
+	color: var(--spacecadet);
 	font-family: var(--Playfair);
 	font-size: 30px;
 }
@@ -533,8 +535,8 @@ main .gallery-title {
 }
 .services-page {
 	margin-top: 100px;
-	background: linear-gradient(120deg, #00aeda93 0%, #00eaff84 100%),
-		url(../assets/backgrounds/beach2.jpg) no-repeat;
+	background: linear-gradient(120deg, #eeeeeed7 0%, #00eaff52 100%),
+		url(../assets/backgrounds/umbrella-waves.jpg) no-repeat;
 	background-size: cover;
 }
 
@@ -867,7 +869,12 @@ hr {
 
 /*blog-page*/
 .blog-page-background {
-	background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+	background: linear-gradient(to top, #fff1eb80 0%, #ace1f994 100%),
+		url(../assets/backgrounds/blue-waves.jpg) no-repeat;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-attachment: fixed;
 }
 .blogTitle {
 	margin-top: 100px;
@@ -883,6 +890,14 @@ hr {
 	color: var(--spacecadet);
 }
 
+#post1-page {
+	background: linear-gradient(to top, #fff1eb80 0%, #ace1f994 100%),
+		url(../assets/backgrounds/blue-waves.jpg) no-repeat;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-attachment: fixed;
+}
 .posts-container {
 	margin-top: 40px;
 	margin-left: 200px;
@@ -895,7 +910,7 @@ hr {
 }
 .post {
 	margin: 40px 40px 40px 40px;
-	background-color: #ffffff;
+	background-color: #ffffffaf;
 	border-radius: 5px;
 	padding: 30px;
 }
@@ -967,7 +982,12 @@ hr {
 	margin-top: 60px;
 	width: 100%;
 	height: 100%;
-	background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+	background: linear-gradient(to top, #fff1eb80 0%, #ace1f994 100%),
+		url(../assets/backgrounds/blue-waves.jpg) no-repeat;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-attachment: fixed;
 }
 
 .calender-page * {
@@ -1303,7 +1323,54 @@ hr {
 	z-index: 3;
 	opacity: 1;
 }
+/*visit jamaica*/
+.jamaica-page {
+	background: url(../assets/backgrounds/jamaica.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-attachment: fixed;
+}
+.jamaica-section h1 {
+	margin-top: 10%;
+	padding-top: 30px;
+	position: relative;
+	font-size: 60px;
+	color: var(--baby-powder);
+	font-family: var(--Abel);
+	text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.473);
+}
+.jamaica-content p {
+	padding: 10px;
+	font-size: 40px;
+	font-family: "ABEL";
+	color: white;
+	text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.473);
 
+	text-justify: auto;
+}
+.jamaica-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.jamaica-section {
+	height: 100vh;
+}
+.jamaica-button {
+	cursor: pointer;
+	border: none;
+	width: 200px;
+	height: 40px;
+	border-radius: 5px;
+	background-color: #004172;
+	color: white;
+	font-size: 25px;
+}
+.jamaica-button:hover {
+	background-color: #4a68d4;
+}
 /*Mobile*/
 @media (max-width: 1100px) {
 	header {
