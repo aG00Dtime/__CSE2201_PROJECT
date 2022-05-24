@@ -1,1 +1,6 @@
-Import db and change php/connections.php to match sql server settings to connect
+Used xampp to test the website and database connection
+https://www.apachefriends.org/index.html
+
+
+SETUP:
+Import the db into mysql(bundled with xampp) and change the php/connections.php to match sql server credentials to connect
