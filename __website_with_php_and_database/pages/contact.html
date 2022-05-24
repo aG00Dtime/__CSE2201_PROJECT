@@ -123,7 +123,7 @@
 
               <h2>Send us a message</h2>
 
-              <form class="contact" id="contactform" action="../php/contact.php" method="post">
+              <form class="contact" id="contactform" >
 
                 <input type="text" id="name" name= "formName"class="text-box" placeholder="Name" required>
 
@@ -131,7 +131,7 @@
 
                 <textarea id="message" name= "formMessage" rows="5" placeholder="Type your message here..." required></textarea>
 
-                <button  type="submit" class="send-btn" ">Submit</button>
+                <button onclick="validateCform()"  type="submit" class="send-btn" ">Submit</button>
 
               </form>
             </div>

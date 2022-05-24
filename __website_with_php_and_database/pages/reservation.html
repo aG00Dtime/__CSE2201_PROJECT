@@ -112,13 +112,19 @@
 						<h3>Set aside a date</h3>
 					</span>
 
-					<form class="reservationForm slide-up" id="reservationForm">
+					<form
+						class="reservationForm slide-up"
+						id="reservationForm"
+						method="post"
+						action="../php/add_reservation.php"
+					>
 						<div class="reservationFormGroup">
 							<input
 								class="Input"
 								type="text"
 								placeholder="Name (required)"
 								id="name"
+								name="visitor_name"
 								required
 							/>
 							<input
@@ -126,6 +132,7 @@
 								type="email"
 								placeholder="Email (required)"
 								id="email"
+								name="email"
 								required
 							/>
 							<input
@@ -133,20 +140,21 @@
 								type="tel"
 								placeholder="Phone (required)"
 								id="phone"
+								name="phone"
 								required
 							/>
 
 							<label class="DateLabel">From</label>
-							<input class="Date" type="date" id="from" required />
+							<input class="Date" type="date" id="from" name="from" required />
 
 							<label class="DateLabel">To</label>
-							<input class="Date" type="date" id="to" required />
+							<input class="Date" type="date" id="to" name="to" required />
 
-							<!--just validating the form for now since we actually send it somewhere-->
+							<!--just validating using php and adding it to the database-->
 							<button
+								type="submit"
 								class="reservationSubmitButton"
 								id="reservationSubmitButton"
-								onclick="validateRform()"
 							>
 								Send Request
 							</button>
