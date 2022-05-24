@@ -190,6 +190,10 @@ main .gallery-page {
 	background: linear-gradient(25deg, #000503ad 0%, #00000077 100%),
 		url(../assets/backgrounds//boats-beach.jpg) no-repeat;
 	background-size: cover;
+
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-attachment: fixed;
 }
 .about-us-page {
 	margin-top: 50px;

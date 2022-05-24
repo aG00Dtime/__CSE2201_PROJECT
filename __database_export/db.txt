@@ -1,0 +1,1 @@
+Import db and change php/connections.php to match sql server settings to connect
