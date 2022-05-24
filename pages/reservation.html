@@ -54,7 +54,7 @@
 					</ul>
 				</li>
 
-				<li><a href="./reviews.html">REVIEWS</a></li>
+				<li><a href="./reviews.php">REVIEWS</a></li>
 
 				<li>
 					<a href="#">BLOG <i class="fa fa-caret-down"></i></a>
@@ -72,13 +72,24 @@
 						<li><a href="./visit_jamaica.html">VISIT JAMAICA</a></li>
 
 						<li>
-							<a href=""><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+							<a
+								href="https://www.facebook.com"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<i class="fa-brands fa-facebook-f"></i> Facebook</a
+							>
 						</li>
 						<li>
-							<a href=""><i class="fa-brands fa-twitter"></i> Twitter</a>
+							<a href="https://www.twitter.com" target="_blank" rel="noreferrer"
+								><i class="fa-brands fa-twitter"></i> Twitter</a
+							>
 						</li>
 						<li>
-							<a href=""
+							<a
+								href="https://www.instagram.com"
+								target="_blank"
+								rel="noreferrer"
 								><i class="fa-brands fa-instagram-square"></i> Instagram</a
 							>
 						</li>
@@ -86,13 +97,19 @@
 				</li>
 
 				<li class="hide">
-					<a href=""><i class="fa-brands fa-facebook-f"></i></a>
+					<a href="https://www.facebook.com" target="_blank" rel="noreferrer"
+						><i class="fa-brands fa-facebook-f"></i
+					></a>
 				</li>
 				<li class="hide">
-					<a href=""><i class="fa-brands fa-twitter"></i></a>
+					<a href="https://www.twitter.com" target="_blank" rel="noreferrer"
+						><i class="fa-brands fa-twitter"></i
+					></a>
 				</li>
 				<li class="hide">
-					<a href=""><i class="fa-brands fa-instagram-square"></i></a>
+					<a href="https://www.instagram.com" target="_blank" rel="noreferrer"
+						><i class="fa-brands fa-instagram-square"></i
+					></a>
 				</li>
 				<li class="hide">
 					<a href="tel:123-456-7890"
@@ -112,13 +129,19 @@
 						<h3>Set aside a date</h3>
 					</span>
 
-					<form class="reservationForm slide-up" id="reservationForm">
+					<form
+						class="reservationForm slide-up"
+						id="reservationForm"
+						method="post"
+						action="../php/add_reservation.php"
+					>
 						<div class="reservationFormGroup">
 							<input
 								class="Input"
 								type="text"
 								placeholder="Name (required)"
 								id="name"
+								name="visitor_name"
 								required
 							/>
 							<input
@@ -126,6 +149,7 @@
 								type="email"
 								placeholder="Email (required)"
 								id="email"
+								name="email"
 								required
 							/>
 							<input
@@ -133,20 +157,21 @@
 								type="tel"
 								placeholder="Phone (required)"
 								id="phone"
+								name="phone"
 								required
 							/>
 
 							<label class="DateLabel">From</label>
-							<input class="Date" type="date" id="from" required />
+							<input class="Date" type="date" id="from" name="from" required />
 
 							<label class="DateLabel">To</label>
-							<input class="Date" type="date" id="to" required />
+							<input class="Date" type="date" id="to" name="to" required />
 
-							<!--just validating the form for now since we actually send it somewhere-->
+							<!--just validating using php and adding it to the database-->
 							<button
+								type="submit"
 								class="reservationSubmitButton"
 								id="reservationSubmitButton"
-								onclick="validateRform()"
 							>
 								Send Request
 							</button>
