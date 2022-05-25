@@ -439,7 +439,7 @@ main .gallery-title {
 }
 
 .box {
-	background-color: rgba(255, 255, 255, 0.959);
+	background-color: rgb(255, 255, 255);
 	padding: 30px;
 	margin: 30px;
 	border-radius: 5px;
@@ -478,60 +478,6 @@ main .gallery-title {
 	background-color: transparent;
 }
 
-.box2 {
-	grid-column-start: 1;
-	grid-row-start: 3;
-	grid-row-end: 5;
-}
-
-.box3 {
-	grid-column-start: 2;
-	grid-row-start: 3;
-	grid-row-end: 5;
-}
-
-.box4 {
-	grid-column-start: 3;
-	grid-row-start: 3;
-	grid-row-end: 5;
-}
-
-.box5 {
-	grid-column-start: 1;
-	grid-row-start: 5;
-	grid-row-end: 6;
-}
-
-.box6 {
-	grid-column-start: 2;
-	grid-row-start: 5;
-	grid-row-end: 5;
-}
-
-.box7 {
-	grid-column-start: 3;
-	grid-row-start: 5;
-	grid-row-end: 5;
-}
-
-.box8 {
-	grid-column-start: 1;
-	grid-row-start: 6;
-	grid-row-end: 6;
-}
-
-.box9 {
-	grid-column-start: 2;
-	grid-row-start: 6;
-	grid-row-end: 6;
-}
-
-.box10 {
-	grid-column-start: 3;
-	grid-row-start: 6;
-	grid-row-end: 6;
-}
-
 .inView {
 	opacity: 1;
 	-webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
@@ -539,7 +485,7 @@ main .gallery-title {
 }
 .services-page {
 	margin-top: 100px;
-	background: linear-gradient(120deg, #eeeeeed7 0%, #00eaff52 100%),
+	background: linear-gradient(120deg, #000000bb 0%, #00000052 100%),
 		url(../assets/backgrounds/umbrella-waves.jpg) no-repeat;
 	background-size: cover;
 }
@@ -914,14 +860,14 @@ hr {
 }
 .post {
 	margin: 40px 40px 40px 40px;
-	background-color: #ffffffaf;
+	background-color: #ffffff;
 	border-radius: 5px;
 	padding: 30px;
 }
 
 .postTitle {
 	color: var(--spacecadet);
-	font-family: var(--Playfair);
+	font-family: var(--Abel);
 	font-size: 25px;
 	margin-bottom: 20px;
 	font-weight: bold;
@@ -929,7 +875,7 @@ hr {
 
 .postDate {
 	margin-top: 30px;
-	font-family: var(--Lora);
+	font-family: var(--Abel);
 	font-size: 20px;
 	padding-top: 10px;
 }
@@ -941,7 +887,7 @@ hr {
 
 .postDesc {
 	margin-top: 30px;
-	font-family: var(--Lora);
+	font-family: var(--Abel);
 	color: var(--spacecadet);
 	font-size: 18px;
 	line-height: 20px;
@@ -954,9 +900,9 @@ hr {
 
 .postDesc-single {
 	margin-top: 30px;
-	font-family: var(--Lora);
+	font-family: var(--Abel);
 	color: var(--spacecadet);
-	font-size: 18px;
+	font-size: 20px;
 	line-height: 20px;
 }
 
@@ -1241,7 +1187,15 @@ hr {
 	text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.616);
 }
 /*carousel*/
+.carousel-page .p {
+	font-size: 25px;
+	font-family: var(--Abel);
+	padding: 20px 140px 20px 140px;
 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 .carousel {
 	height: 80%;
 	width: 80%;
@@ -1472,6 +1426,9 @@ hr {
 }
 /*services page */
 @media (max-width: 900px) {
+	.carousel-page .p {
+		padding: 20px 20px 20px 20px;
+	}
 	.services-section {
 		display: flex;
 		flex-direction: column;
