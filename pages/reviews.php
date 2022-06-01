@@ -66,26 +66,26 @@ include("{$_SERVER['DOCUMENT_ROOT']}/php/get_reviews.php");
 					<li><a href="./visit_jamaica.html">VISIT JAMAICA</a></li>
 
 					<li>
-						<a href="https://www.facebook.com" target="_blank" rel="noreferrer">
+						<a href="https://www.facebook.com/EdenIslandvilla" target="_blank" rel="noreferrer">
 							<i class="fa-brands fa-facebook-f"></i> Facebook</a>
 					</li>
 					<li>
-						<a href="https://www.twitter.com" target="_blank" rel="noreferrer"><i class="fa-brands fa-twitter"></i> Twitter</a>
+						<a href="https://twitter.com/Edenislandvilla" target="_blank" rel="noreferrer"><i class="fa-brands fa-twitter"></i> Twitter</a>
 					</li>
 					<li>
-						<a href="https://www.instagram.com" target="_blank" rel="noreferrer"><i class="fa-brands fa-instagram-square"></i> Instagram</a>
+						<a href="https://www.instagram.com/edenislandvilla/" target="_blank" rel="noreferrer"><i class="fa-brands fa-instagram-square"></i> Instagram</a>
 					</li>
 				</ul>
 			</li>
 
 			<li class="hide">
-				<a href="https://www.facebook.com" target="_blank" rel="noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+				<a href="https://www.facebook.com/EdenIslandvilla" target="_blank" rel="noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
 			</li>
 			<li class="hide">
-				<a href="https://www.twitter.com" target="_blank" rel="noreferrer"><i class="fa-brands fa-twitter"></i></a>
+				<a href="https://twitter.com/Edenislandvilla" target="_blank" rel="noreferrer"><i class="fa-brands fa-twitter"></i></a>
 			</li>
 			<li class="hide">
-				<a href="https://www.instagram.com" target="_blank" rel="noreferrer"><i class="fa-brands fa-instagram-square"></i></a>
+				<a href="https://www.instagram.com/edenislandvilla/" target="_blank" rel="noreferrer"><i class="fa-brands fa-instagram-square"></i></a>
 			</li>
 			<li class="hide">
 				<a href="tel:123-456-7890"><i class="fa-solid fa-phone"></i> 123-456</a>

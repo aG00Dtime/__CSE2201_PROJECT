@@ -3,4 +3,4 @@ https://www.apachefriends.org/index.html
 
 
 SETUP:
-Import the db into mysql(bundled with xampp) and change the php/connections.php to match sql server credentials to connect
+Import the db into mysql(bundled with xampp) and modify the php/connections.php to match sql server credentials to connect
