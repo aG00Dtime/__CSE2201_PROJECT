@@ -64,9 +64,9 @@ INSERT INTO `reviews` (`name`, `rating`, `comment`, `id`) VALUES
 ('Someone', 5, 'I love this place', 28),
 ('Sarah', 3, 'It\'s okay.', 29),
 ('Thomas', 0, 'Horrible.', 30),
-('Dog', 5, 'Woof', 31),
-('Cat', 4, 'Toys', 32),
 ('Testing', 0, 'Testing', 33),
 ('Test name', 4, 'Test review', 34),
 ('Tehee', 3, 'asdada', 35);
+
+
 COMMIT;
